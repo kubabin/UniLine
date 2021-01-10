@@ -2,6 +2,7 @@
 using System.Resources;
 using System.Diagnostics;
 
+
 namespace UniLine
 {
     class Program
@@ -9,6 +10,7 @@ namespace UniLine
 
         static void Main(string[] args)
         {
+            
             // TODO: Uruchom z argumentami
             Console.Title = args[1];
             ResourceManager manager = ResourceManager.CreateFileBasedResourceManager("Resources.resx", "Properties", null);
@@ -38,6 +40,7 @@ namespace UniLine
             catch(Exception e)
             {
                 Debug.WriteLine("[UNILINE] ERROR! Exception: " + e);
+                Debug.WriteLine("[UNILINE] Continue? Select in dialog box.");
                 
             }
             Debug.WriteLine("[UNILINE] Everything set up!");
