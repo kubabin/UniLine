@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Resources;
 using System.Diagnostics;
-using System.Windows.
 
 namespace UniLine
 {
